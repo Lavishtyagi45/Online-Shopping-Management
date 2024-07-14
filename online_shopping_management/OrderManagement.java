@@ -69,8 +69,8 @@ public class OrderManagement {
 	public boolean cancelOrder(int orderIdToCancel, int id) {
 		Order order=getOrderByOrderId(orderIdToCancel);
 		if(order!=null) {
-			getOrdersByUserId(id).remove(order);
-            saveOrdersToFile();
+			orders.remove(order);
+			saveOrdersToFile();
 			return true;
 		}
 		return false;

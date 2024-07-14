@@ -67,10 +67,12 @@ The main components of the system are organized into the following classes:
 6. **Logout**: Log out from the current admin account.
 
 #### Use Case Diagram
-![Screenshot (22)](https://github.com/Lavishtyagi45/Online-Shopping-Management/assets/122440431/9836cecf-3f24-4336-a426-0754ce719afe)
+![useCaseDiagram](https://github.com/user-attachments/assets/cb85d8ac-d4f9-4d9b-881b-5fed3df69b5f)
+
 
 #### Class Diagram 
-![ClassDiagram1](https://github.com/user-attachments/assets/febbe710-3684-43ea-8733-617f0f39cb87)
+![ClassDiagram1](https://github.com/user-attachments/assets/1ef32453-facd-48fc-bccc-396aeada7ddf)
+
 
 #### Flow Chart 
 

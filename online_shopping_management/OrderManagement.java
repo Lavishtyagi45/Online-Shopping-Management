@@ -70,6 +70,7 @@ public class OrderManagement {
 		Order order=getOrderByOrderId(orderIdToCancel);
 		if(order!=null) {
 			getOrdersByUserId(id).remove(order);
+            saveOrdersToFile();
 			return true;
 		}
 		return false;

@@ -81,6 +81,25 @@ The main components of the system are organized into the following classes:
 
 #### Bibliography
 
+1. **"A Project Report On ONLINE SHOPPING SYSTEM"**:
+   - This project report provides an in-depth analysis of an online shopping system. It covers aspects such as system planning, requirements analysis, system design, and more.
+   - [Read the full report](https://arkajainuniversity.ac.in/naac/Criteria%201/1.3.4/1_3_4_DOCUMENTS/CSIT/AJU190398.pdf) ¹.
+
+2. **"Online shopping management system" (PDF)**:
+   - An academic paper discussing an online shopping management system. Although the snippet doesn't provide extensive details, you might find it useful.
+   - [Access the PDF](https://www.academia.edu/118364383/Online_shopping_management_system) ².
+
+3. **GitHub Repositories**:
+   - Explore existing GitHub repositories related to online shopping systems. These repositories often contain code, documentation, and project examples.
+   - [GitHub Topics: Online Shopping System](https://github.com/topics/online-shopping-system) ³.
+
+4. **Project Proposal Template**:
+   - If you're creating a project proposal, consider using a template specifically designed for an online shopping system.
+   - [Online Shopping System Project Proposal Template](https://clickup.com/templates/project-proposal/online-shopping-system) ⁴.
+
+5. **"Mini Project Report On ONLINE SHOPPING SYSTEM"**:
+   - Another mini project report that investigates the business potential of e-commerce for small and medium-sized enterprises (SMEs).
+   - [Read the report](https://www.academia.edu/35185477/Mini_Project_Report_On_ONLINE_SHOPPING_SYSTEM) ⁵.
 
 ## Conclusion
 

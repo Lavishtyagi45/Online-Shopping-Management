@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SearchAndFilter {
-    private List<Product> products = new ArrayList<>();
+    ProductManagement productManagement=new ProductManagement();
+    private List<Product> products = productManagement.getProducts();
 
     // Method to search products based on a query
     public List<Product> searchProducts(String query) {

@@ -76,6 +76,8 @@ The main components of the system are organized into the following classes:
 
 #### Flow Chart 
 
+#### Sample Input/Output for Customers
+[![Watch the video](https://img.youtube.com/vi/)](https://www.youtube.com/watch?v=YvrL3iKG6d0)
 
 #### Bibliography
 

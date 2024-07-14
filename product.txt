@@ -1,0 +1,2 @@
+1,test1,testing product,100.0,fruits,20
+2,test2,testing product,135.0,fruits,50

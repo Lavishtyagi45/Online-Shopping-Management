@@ -366,9 +366,13 @@ public class Main {
     }
 
     private static void filterProducts() {
-        System.out.print("Enter filter criteria (e.g., category): ");
-        String criteria = scanner.nextLine();
-        List<Product> results = searchAndFilter.searchProducts(criteria);
+        System.out.print("Enter min amount : ");
+        double min=scanner.nextDouble();
+        System.out.print("Enter max amount : ");
+        double max=scanner.nextDouble();
+        scanner.nextLine();
+        
+        List<Product> results = searchAndFilter.filterProducts(min, max);
         System.out.println("Filtered Results:");
         for (Product product : results) {
             System.out.println(product);

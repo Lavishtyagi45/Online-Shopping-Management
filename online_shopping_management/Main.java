@@ -285,7 +285,7 @@ public class Main {
 
             Product product = productManagement.getProductById(productId);
             if (product != null && product.getQuantity() >= quantity) {
-                Order newOrder = new Order(orderManagement.generateOrderId(),LoggedInUser.getId(), productId, quantity, product.getPrice(), address, "Pending");
+                Order newOrder = new Order(orderManagement.generateOrderId(),LoggedInUser.getId(), productId, quantity, product.getPrice(), "Pending", address);
                 orderManagement.placeOrder(newOrder);
                 System.out.println("Order placed successfully!");
             } else {

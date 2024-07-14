@@ -12,7 +12,7 @@ public class SearchAndFilter {
         List<Product> results = new ArrayList<>();
         for (Product product : products) {
             if (product.getName().toLowerCase().contains(query.toLowerCase()) ||
-                product.getDescription().toLowerCase().contains(query.toLowerCase())) {
+                product.getDescription().toLowerCase().contains(query.toLowerCase()) || product.getCategory().toLowerCase().contains(query.toLowerCase()) ) {
                 results.add(product);
             }
         }

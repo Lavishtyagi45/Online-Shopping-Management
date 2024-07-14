@@ -109,17 +109,6 @@ public class Main {
             scanner.nextLine();
             Product product = productManagement.getProductById(productId);
             if (product != null) {
-                System.out.print("Enter new product name: ");
-                String name = scanner.nextLine();
-                System.out.print("Enter new product price: ");
-                double price = scanner.nextDouble();
-                System.out.print("Enter new product quantity: ");
-                int quantity = scanner.nextInt();
-                scanner.nextLine(); // Consume newline
-
-                product.setName(name);
-                product.setPrice(price);
-                product.setQuantity(quantity);
                 productManagement.updateProduct(product);
                 System.out.println("Product updated successfully!");
             } else {

@@ -104,7 +104,6 @@ public class ProductManagement {
 
 			System.out.print("Enter new product price (enter -1 to keep current): ");
 			double price = scanner.nextDouble();
-			scanner.nextLine(); // Consume newline
 			if (price != -1) {
 			    existingProduct.setPrice(price);
 			}

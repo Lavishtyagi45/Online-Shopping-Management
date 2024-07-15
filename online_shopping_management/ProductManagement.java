@@ -88,7 +88,8 @@ public class ProductManagement {
 	}
 
 	public void updateProduct(Product existingProduct) {
-		try (Scanner scanner = new Scanner(System.in)) {
+		Scanner scanner = new Scanner(System.in);
+		try {
 			System.out.print("Enter new product name : ");
 			String name = scanner.nextLine();
 			existingProduct.setName(name);
@@ -108,7 +109,10 @@ public class ProductManagement {
 			System.out.print("Enter new product quantity : ");
 			int quantity = Integer.parseInt(scanner.nextLine());
 			existingProduct.setQuantity(quantity);
+		}catch(Exception e){
+			System.out.println("Error while editing product");
 		}
+		scanner.close();
 		editProduct(existingProduct);
 	}
 

@@ -77,13 +77,16 @@ public class UserManagement {
     
     
     // Method to register a new user
-    public boolean registerUser(User user) {
-    	if(!users.contains(user)) {
-    		users.add(user);
-    		saveUsersToFile();
-    		return true;
+    public boolean registerUser(User newUser) {
+    	loadUsersFromFile();
+    	for(User user:users) {
+    		if(user.getUsername().equals(newUser.getUsername()) || user.getEmail().equals(newUser.getEmail())) {
+        		return false;
+        	}	
     	}
-    	return false;
+    	users.add(newUser);
+		saveUsersToFile();
+		return true;
     }
 
     // Method to perform user login

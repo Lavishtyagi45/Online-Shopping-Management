@@ -87,35 +87,6 @@ public class ProductManagement {
 		return lastUsedId + 1;
 	}
 
-	public void updateProduct(Product existingProduct) {
-		Scanner scanner = new Scanner(System.in);
-		try {
-			System.out.print("Enter new product name : ");
-			String name = scanner.nextLine();
-			existingProduct.setName(name);
-
-			System.out.print("Enter new product description : ");
-			String description = scanner.nextLine();
-			existingProduct.setDescription(description);
-
-			System.out.print("Enter new product price : ");
-			double price =Double.parseDouble(scanner.nextLine());
-			existingProduct.setPrice(price);
-
-			System.out.print("Enter new product category : ");
-			String category = scanner.nextLine();
-			existingProduct.setCategory(category);
-
-			System.out.print("Enter new product quantity : ");
-			int quantity = Integer.parseInt(scanner.nextLine());
-			existingProduct.setQuantity(quantity);
-		}catch(Exception e){
-			System.out.println("Error while editing product");
-		}
-		scanner.close();
-		editProduct(existingProduct);
-	}
-
 	public void updateProductQuantity(int productId, int i) {
 		Product product = getProductById(productId);
 		System.out.print("Enter new product quantity (enter -1 to keep current): ");

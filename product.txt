@@ -1,4 +1,4 @@
-1,test1,testing product,300.0,fruits,20
+1,test1,testing product,140.0,fruits,40
 2,test2,testing product,135.0,fruits,50
 3,test3,testing product,110.0,fruits,20
 4,test4,testing product,155.0,fruits,50

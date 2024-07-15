@@ -51,29 +51,29 @@ public class Main {
 		try {
 			int choice = Integer.parseInt(scanner.nextLine());
 			switch (choice) {
-			case 1:
-				addProduct();
-				break;
-			case 2:
-				editProduct();
-				break;
-			case 3:
-				deleteProduct();
-				break;
-			case 4:
-				displayAllOrders();
-				break;
-			case 5:
-				updateOrderStatus();
-				break;
-			case 6:
-				logout();
-				break;
-			case 7:
-				exit();
-				break;
-			default:
-				System.out.println("Invalid choice. Please select a valid option.");
+				case 1:
+					addProduct();
+					break;
+				case 2:
+					editProduct();
+					break;
+				case 3:
+					deleteProduct();
+					break;
+				case 4:
+					displayAllOrders();
+					break;
+				case 5:
+					updateOrderStatus();
+					break;
+				case 6:
+					logout();
+					break;
+				case 7:
+					exit();
+					break;
+				default:
+					System.out.println("Invalid choice. Please select a valid option.");
 			}
 		} catch (NumberFormatException e) {
 			System.out.println("Error: Invalid input. Please enter a number.");
@@ -108,9 +108,29 @@ public class Main {
 		try {
 			System.out.print("Enter product ID to edit: ");
 			int productId = Integer.parseInt(scanner.nextLine());
-			Product product = productManagement.getProductById(productId);
-			if (product != null) {
-				productManagement.updateProduct(product);
+			Product existingProduct = productManagement.getProductById(productId);
+			if (existingProduct != null) {
+				System.out.print("Enter new product name : ");
+				String name = scanner.nextLine();
+				existingProduct.setName(name);
+
+				System.out.print("Enter new product description : ");
+				String description = scanner.nextLine();
+				existingProduct.setDescription(description);
+
+				System.out.print("Enter new product price : ");
+				double price = Double.parseDouble(scanner.nextLine());
+				existingProduct.setPrice(price);
+
+				System.out.print("Enter new product category : ");
+				String category = scanner.nextLine();
+				existingProduct.setCategory(category);
+
+				System.out.print("Enter new product quantity : ");
+				int quantity = Integer.parseInt(scanner.nextLine());
+				existingProduct.setQuantity(quantity);
+				
+				productManagement.editProduct(existingProduct);
 				System.out.println("Product updated successfully!");
 			} else {
 				System.out.println("Product not found.");
@@ -157,44 +177,44 @@ public class Main {
 		try {
 			int choice = Integer.parseInt(scanner.nextLine());
 			switch (choice) {
-			case 1:
-				placeOrder();
-				break;
-			case 2:
-				viewOrderHistory();
-				break;
-			case 3:
-				cancelOrder();
-				break;
-			case 4:
-				searchProducts();
-				break;
-			case 5:
-				filterProducts();
-				break;
-			case 6:
-				addProductToCart();
-				break;
-			case 7:
-				updateCart();
-				break;
-			case 8:
-				removeProductFromCart();
-				break;
-			case 9:
-				makePayment();
-				break;
-			case 10:
-				trackOrder();
-				break;
-			case 11:
-				logout();
-				break;
-			case 12:
-				exit();
-				break;
-			default:
-				System.out.println("Invalid choice. Please select a valid option.");
+				case 1:
+					placeOrder();
+					break;
+				case 2:
+					viewOrderHistory();
+					break;
+				case 3:
+					cancelOrder();
+					break;
+				case 4:
+					searchProducts();
+					break;
+				case 5:
+					filterProducts();
+					break;
+				case 6:
+					addProductToCart();
+					break;
+				case 7:
+					updateCart();
+					break;
+				case 8:
+					removeProductFromCart();
+					break;
+				case 9:
+					makePayment();
+					break;
+				case 10:
+					trackOrder();
+					break;
+				case 11:
+					logout();
+					break;
+				case 12:
+					exit();
+					break;
+				default:
+					System.out.println("Invalid choice. Please select a valid option.");
 			}
 		} catch (NumberFormatException e) {
 			System.out.println("Error: Invalid input. Please enter a number.");
@@ -225,7 +245,7 @@ public class Main {
 			System.out.print("Enter product ID to update quantity in cart: ");
 			int productId = Integer.parseInt(scanner.nextLine());
 			System.out.print("Enter new quantity: ");
-			int quantity =Integer.parseInt(scanner.nextLine());
+			int quantity = Integer.parseInt(scanner.nextLine());
 
 			if (shoppingCart.updateProductQuantity(loggedInUser.getId(), productId, quantity)) {
 				System.out.println("Cart updated successfully!");
@@ -413,17 +433,17 @@ public class Main {
 		scanner.nextLine();
 
 		switch (choice) {
-		case 1:
-			registerUser();
-			break;
-		case 2:
-			loginUser();
-			break;
-		case 3:
-			exit();
-			break;
-		default:
-			System.out.println("Invalid choice. Please select a valid option.");
+			case 1:
+				registerUser();
+				break;
+			case 2:
+				loginUser();
+				break;
+			case 3:
+				exit();
+				break;
+			default:
+				System.out.println("Invalid choice. Please select a valid option.");
 		}
 	}
 

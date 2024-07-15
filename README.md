@@ -446,7 +446,13 @@ A flow chart outlines the sequence of steps and decisions in the system processe
 5. **"Mini Project Report On ONLINE SHOPPING SYSTEM"**:
    - Another mini project report that investigates the business potential of e-commerce for small and medium-sized enterprises (SMEs).
    - [Read the report](https://www.academia.edu/35185477/Mini_Project_Report_On_ONLINE_SHOPPING_SYSTEM) ⁵.
+   - 
+6-  **"Online shopping management system" (Presentation)**:
+   - An academic paper discussing an online shopping management system. Although the snippet doesn't provide extensive details, you might find it useful.
+   - [Access the Presentation]([https://www.academia.edu/118364383/Online_shopping_management_system](https://docs.google.com/presentation/d/139QedBmYKKuYuMHfjq3Rz19tWxVeWSk3/edit?usp=sharing&ouid=116139942047237276158&rtpof=true&sd=true)) ².
 
 ## Conclusion
 
 This README provides an overview of the Online Shopping Management System, its features, package structure, and usage instructions. For further details and implementation, refer to the source code and comments within each class.
+
+##presen

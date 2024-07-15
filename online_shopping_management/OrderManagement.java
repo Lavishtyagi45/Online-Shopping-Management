@@ -17,6 +17,7 @@ public class OrderManagement {
     }
 
     private void loadOrdersFromFile() {
+    	orders.clear();
         try (BufferedReader reader = new BufferedReader(new FileReader(FILE_PATH))) {
             String line;
             while ((line = reader.readLine()) != null) {
@@ -77,6 +78,7 @@ public class OrderManagement {
 	}
 
 	public Order getOrderByOrderId(int orderIdToCancel) {
+		loadOrdersFromFile();
         for (Order order : orders) {
             if (order.getId()==orderIdToCancel) {
                 return order;

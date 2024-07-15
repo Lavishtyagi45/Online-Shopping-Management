@@ -1,2 +1,3 @@
-2,test2,testing product,135.0,fruits,50
 9,test9,testing product,100.0,vegetables,50
+2,test2,testing product,135.0,fruits,10
+1,test10,testing product,300.0,fruits,1

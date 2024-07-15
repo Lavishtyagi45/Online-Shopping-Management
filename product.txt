@@ -1,4 +1,4 @@
-1,test10,testing product,300.0,fruits,20
+1,test1,testing product,300.0,fruits,20
 2,test2,testing product,135.0,fruits,50
 3,test3,testing product,110.0,fruits,20
 4,test4,testing product,155.0,fruits,50
@@ -7,4 +7,5 @@
 7,test7,testing product,120.0,vegetables,20
 8,test8,testing product,185.0,fruits,50
 9,test9,testing product,100.0,vegetables,50
-10,test11,testing product,1000.0,fruits,10
+10,test10,testing product,1000.0,fruits,10
+11,test11,testing product,100.0,fruits,40

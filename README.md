@@ -1,7 +1,7 @@
 # Online Shopping Management System
 
 ## Presentation
-- [Access the Presentation](https://docs.google.com/presentation/d/139QedBmYKKuYuMHfjq3Rz19tWxVeWSk3/edit?usp=sharing&ouid=116139942047237276158&rtpof=true&sd=true)
+- [Access the Presentation](https://1drv.ms/p/c/cbb0dc3d169344ca/EcKN21kotcJMn0T1MobVNQ8BEWqFlz3P_ckWcgscn9lf2A)
 
 ## Overview
 
